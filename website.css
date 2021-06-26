@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    height: 50px;
+    /* padding-top: 5px; */
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+}
+
+.navlist{
+    width: 50%;
+    max-height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navlist li{
+    /* padding-left: 20px; */
+    /* padding-right: 20px */
+    list-style-type: none;
+    list-style: none;
+    
+}
+
+.navlist li a{
+    padding: 30px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+.navlist li a:hover{
+    padding: 30px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    color: grey;
+    
+}
+
+.logo{
+    /*width: 10vw;
+    padding-top: 7px;
+    padding-left: 30px; */
+    width: 30%;
+    height: 30%;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 3px solid red;
+    text-align: center; 
+   
+}
+
+img {
+    
+}
+
+.rightNav{
+   /* background: chartreuse; */
+    width: 50%;
+    max-height: 40px;
+    text-align: right;
+    padding-top: 10px;
+    align-items: center;
+}
+
+#search{
+    padding: 4px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    font-size: 17px;
+    align-items: center;
+}
+
+.background{
+    background: rgba(0, 0, 0, 1);
+}
+
+.firstsection{
+    background-image: url("http://i.stack.imgur.com/vhoa0.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+}
+
+.boxmain{
+   /* width: 50%;
+    height: 50%;
+    border-radius: 0%;
+    display: flex; */
+}
+
+
+.one{
+    width: 40%;
+    height: 40%;
+    border: 3px solid red;
+    border-radius: 50%;
+    margin-top: 145px;
+}
+
+.textbig , .textsmall{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.firsthalf{
+    display: block;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.secondhalf{
+    display: block;
+    margin: auto;   
+}
+
+.btn{
+    color: white;
+    background: red;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid white;
+}
+
+.textbig{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.textsmall{
+    font-size: 17px;
+}
+
+.imgfluid{
+    width: 70%;
+    height: 70%;
+    margin-top: 55px;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.sectiontag{
+    font-size: 25px
+}
+
+.sectionsubtag{
+    font-size: 17px
+}
+
+.paras{
+    width: 100%;
+    padding: 50px;
+}
+
+.secright{
+    display: flex;
+    padding: 100px;
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.two{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+

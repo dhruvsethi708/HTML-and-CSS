@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .face{
+        width: 50vh;
+        position: absolute;
+        top: 150px;
+        left: 500px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 50vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(241, 200, 15);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1;
+        border-style: solid;
+        border-color: brown;
+    }
+
+    .eye1{
+        background-color: whitesmoke;
+        border-radius: 50%;
+        width: 4%;
+        height: 8%;
+        position: absolute;
+        top: 220px;
+        left: 570px;
+        z-index: 2;
+        border-color: brown;
+        border-style: solid;
+    }
+
+    .eye2{
+        background-color: whitesmoke;
+        border-radius: 50%;
+        width: 4%;
+        height: 8%;
+        position: absolute;
+        top: 220px;
+        right: 570px;
+        z-index: 2;
+        border-color: brown;
+        border-style: solid;
+    }
+
+    .body{
+        width: 70vh;
+        position: absolute;
+        top: 95px;
+        left: 442px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 70vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(218, 146, 13);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 0.9;
+        border-style: solid;
+        border-color: brown;
+    }
+
+    .eye11{
+        background-color: black;
+        border-radius: 50%;
+        width: 2%;
+        height: 5%;
+        position: absolute;
+        top: 228px;
+        left: 580px;
+        z-index: 2;
+        border-color: brown;
+        border-style: solid;
+    }
+
+    .eye22{
+        background-color: black;
+        border-radius: 50%;
+        width: 2%;
+        height: 5%;
+        position: absolute;
+        top: 228px;
+        right: 580px;
+        z-index: 2;
+        border-color: brown;
+        border-style: solid;
+    }
+
+    .hair1{
+        width: 20vh;
+        position: absolute;
+        top: 95px;
+        left: 442px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 20vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(139, 48, 12);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1.1;
+        border-color: brown;
+        border-style: solid;
+    }
+
+  
+    .hair2{
+        width: 20vh;
+        position: absolute;
+        top: 95px;
+        right: 442px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 20vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(139, 48, 12);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1.1;
+        border-color: brown;
+        border-style: solid;
+    }
+
+    .ear1{
+        width: 15vh;
+        position: absolute;
+        top: 135px;
+        left: 470px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 10vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(241, 200, 15);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1;
+        transform: rotate(40deg);
+       
+    }
+
+    .ear2{
+        width: 15vh;
+        position: absolute;
+        top: 135px;
+        right: 470px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 10vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(241, 200, 15);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1;
+        transform: rotate(330deg);
+        
+    }
+
+    .hair3{
+        width: 20vh;
+        position: absolute;
+        top: 1900px;
+        left: 350px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 20vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(139, 48, 12);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1.1;
+    }
+
+    .hair4{
+        width: 20vh;
+        position: absolute;
+        top: 180px;
+        left: 400px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 20vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(139, 48, 12);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1.1;
+    }
+
+    .hair5{
+        width: 20vh;
+        position: absolute;
+        top: 180px;
+        left: 400px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 20vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(139, 48, 12);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1.1;
+    }
+
+    .hair6{
+        width: 20vh;
+        position: absolute;
+        top: 180px;
+        left: 400px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 20vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(139, 48, 12);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1.1;
+    }
+
+    .hair7{
+        width: 20vh;
+        position: absolute;
+        top: 180px;
+        left: 400px;
+        /* top: 50%; */
+        /* left: 50%; */
+        height: 20vh;
+        /* width: 50%; */
+        margin: auto;
+        background-color: rgb(139, 48, 12);
+        /*background: (rgba(255, 208, 0, 0.664));*/
+        border-radius: 50%;
+        z-index: 1.1;
+    }
+
+    .nose{
+        background-color: black;
+        border-radius: 50%;
+        width: 4%;
+        height: 4%;
+        position: absolute;
+        top: 316px;
+        left: 620px;
+        z-index: 3;
+    
+    }
+
+    .cheek1{
+        background-color: white;
+        border-radius: 50%;
+        width: 6%;
+        height: 6%;
+        position: absolute;
+        top: 320px;
+        left: 565px;
+        z-index: 2;
+        border-style: solid;
+        border-color: brown;
+    
+    }
+
+    .cheek2{
+        background-color: white;
+        border-radius: 50%;
+        width: 6%;
+        height: 6%;
+        position: absolute;
+        top: 320px;
+        right: 555px;
+        z-index: 2;
+        border-color: brown;
+        border-style: solid;
+    
+    }
+
+    .cheek3{
+        background-color: white;
+        border-radius: 50%;
+        width: 6%;
+        height: 8%;
+        position: absolute;
+        top: 330px;
+        left: 608px;
+        z-index: 1;
+        transform: rotate(90deg);
+        border-style: solid;
+        border-color: brown;
+    
+    }
+
+    .much1{
+        background-color: brown;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        left: 540px;
+        top: 315px;
+        z-index: 99;
+        transform: rotate(25deg);
+    }
+
+    .much2{
+        background-color: brown;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        left: 535px;
+        top: 338px;
+        z-index: 99;
+    }
+
+    .much3{
+        background-color: brown;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        left: 540px;
+        top: 360px;
+        z-index: 99;
+        transform: rotate(335deg);
+    }
+
+    .much4{
+        background-color: brown;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        z-index: 99;
+        right: 540px;
+        top: 360px;
+        transform: rotate(25deg);
+    }
+
+    .much5{
+        background-color: brown;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        right: 535px;
+        top: 338px;
+        z-index: 99;
+    }
+
+    .much6{
+        background-color: brown;
+        width: 70px;
+        height: 5px;
+        position: absolute;
+        right: 540px;
+        top: 315px;
+        z-index: 99;
+        transform: rotate(335deg);
+    }
+</style>
+<body>
+    <div class="face"></div>
+    <div class="eye1"></div>
+    <div class="eye2"></div>
+    <div class="body"></div>
+    <div class="eye11"></div>
+    <div class="eye22"></div>
+    <div class="hair1"></div>
+    <div class="hair2"></div>
+    <div class="ear1"></div>
+    <div class="ear2"></div>
+   
+    
+    <div class="nose"></div>
+    <div class="cheek1"></div>
+    <div class="cheek2"></div>
+    <div class="cheek3"></div>
+    <div class="much1"></div>
+    <div class="much2"></div>
+    <div class="much3"></div>
+    <div class="much4"></div>
+    <div class="much5"></div>
+    <div class="much6"></div>
+</body>
+</html>
